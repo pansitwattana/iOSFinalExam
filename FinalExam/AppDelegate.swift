@@ -6,7 +6,11 @@
 //  Copyright © 2017 Pansit Wattana. All rights reserved.
 //
 
+import GoogleMaps
 import UIKit
+
+// Change this key to a valid key registered with the demo app bundle id.
+let kMapsAPIKey = "AIzaSyAnoUNAJJJeVGH8B3gsgqCHoDmCqcQQPeA"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        if kMapsAPIKey.isEmpty {
+            fatalError("Please provide an API Key using kMapsAPIKey")
+        }
+        
+        GMSServices.provideAPIKey(kMapsAPIKey)
+        
         // Override point for customization after application launch.
         return true
     }
