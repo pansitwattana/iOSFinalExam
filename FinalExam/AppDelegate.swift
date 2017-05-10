@@ -8,6 +8,7 @@
 
 import GoogleMaps
 import UIKit
+import FacebookCore
 
 // Change this key to a valid key registered with the demo app bundle id.
 let kMapsAPIKey = "AIzaSyAnoUNAJJJeVGH8B3gsgqCHoDmCqcQQPeA"
@@ -16,9 +17,10 @@ let kMapsAPIKey = "AIzaSyAnoUNAJJJeVGH8B3gsgqCHoDmCqcQQPeA"
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         
         if kMapsAPIKey.isEmpty {
             fatalError("Please provide an API Key using kMapsAPIKey")
@@ -26,8 +28,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         GMSServices.provideAPIKey(kMapsAPIKey)
         
-        // Override point for customization after application launch.
         return true
+    }
+    
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        return SDKApplicationDelegate.shared.application(application,
+                                                         open: url,
+                                                         sourceApplication: sourceApplication,
+                                                         annotation: annotation)
+    }
+    
+    @available(iOS 9.0, *)
+    func application(_ application: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
+        return SDKApplicationDelegate.shared.application(application, open: url, options: options)
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        AppEventsLogger.activate(application)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -42,10 +59,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-    }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
 
     func applicationWillTerminate(_ application: UIApplication) {

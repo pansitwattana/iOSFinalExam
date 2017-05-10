@@ -18,6 +18,10 @@
 		E629F0CF1EC1C4E00044E0A2 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E629F0CE1EC1C4E00044E0A2 /* FavoriteViewController.swift */; };
 		E629F0D11EC1C7550044E0A2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E629F0D01EC1C7550044E0A2 /* DetailViewController.swift */; };
 		E66A5A351EC2F76200017A34 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A5A341EC2F76200017A34 /* LoginViewController.swift */; };
+		E66A5A541EC2FF0C00017A34 /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66A5A511EC2FF0C00017A34 /* FacebookCore.framework */; };
+		E66A5A551EC2FF0C00017A34 /* FacebookLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66A5A521EC2FF0C00017A34 /* FacebookLogin.framework */; };
+		E66A5A561EC2FF0C00017A34 /* FacebookShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66A5A531EC2FF0C00017A34 /* FacebookShare.framework */; };
+		E66A5A581EC2FF2700017A34 /* Pods_FinalExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66A5A571EC2FF2700017A34 /* Pods_FinalExam.framework */; };
 		E68B44011EC1610A0081E930 /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68B43FE1EC1610A0081E930 /* GoogleMapsBase.framework */; };
 		E68B44021EC1610A0081E930 /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68B43FF1EC1610A0081E930 /* GoogleMapsCore.framework */; };
 		E68B44031EC1610A0081E930 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68B44001EC1610A0081E930 /* GoogleMaps.framework */; };
@@ -63,6 +67,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3F77CBECE3A773EF8D232DCA /* Pods-FinalExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalExam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinalExam/Pods-FinalExam.debug.xcconfig"; sourceTree = "<group>"; };
+		79BCE849E4D515D7AA4BA010 /* Pods_FinalExam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalExam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E62718111EC06CF4004FB3C0 /* FinalExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E62718141EC06CF4004FB3C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E62718191EC06CF4004FB3C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,6 +82,10 @@
 		E629F0CE1EC1C4E00044E0A2 /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		E629F0D01EC1C7550044E0A2 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E66A5A341EC2F76200017A34 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E66A5A511EC2FF0C00017A34 /* FacebookCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookCore.framework; path = "Pods/../build/Debug-iphoneos/FacebookCore/FacebookCore.framework"; sourceTree = "<group>"; };
+		E66A5A521EC2FF0C00017A34 /* FacebookLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookLogin.framework; path = "Pods/../build/Debug-iphoneos/FacebookLogin/FacebookLogin.framework"; sourceTree = "<group>"; };
+		E66A5A531EC2FF0C00017A34 /* FacebookShare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookShare.framework; path = "Pods/../build/Debug-iphoneos/FacebookShare/FacebookShare.framework"; sourceTree = "<group>"; };
+		E66A5A571EC2FF2700017A34 /* Pods_FinalExam.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_FinalExam.framework; path = "Pods/../build/Debug-iphoneos/Pods_FinalExam.framework"; sourceTree = "<group>"; };
 		E68B43FE1EC1610A0081E930 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsBase.framework; sourceTree = "<group>"; };
 		E68B43FF1EC1610A0081E930 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsCore.framework; sourceTree = "<group>"; };
 		E68B44001EC1610A0081E930 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
@@ -97,6 +107,7 @@
 		E68B44231EC162E00081E930 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		E68B44241EC162E00081E930 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		E68B44251EC162E00081E930 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		F6D26EBDF9538B68D675964A /* Pods-FinalExam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalExam.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinalExam/Pods-FinalExam.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +115,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E66A5A581EC2FF2700017A34 /* Pods_FinalExam.framework in Frameworks */,
+				E66A5A541EC2FF0C00017A34 /* FacebookCore.framework in Frameworks */,
+				E66A5A551EC2FF0C00017A34 /* FacebookLogin.framework in Frameworks */,
+				E66A5A561EC2FF0C00017A34 /* FacebookShare.framework in Frameworks */,
 				E68B44281EC162E00081E930 /* Realm.framework in Frameworks */,
 				E68B44201EC162B00081E930 /* SystemConfiguration.framework in Frameworks */,
 				E68B44211EC162B00081E930 /* UIKit.framework in Frameworks */,
@@ -136,6 +151,7 @@
 				E62718131EC06CF4004FB3C0 /* FinalExam */,
 				E62718121EC06CF4004FB3C0 /* Products */,
 				E62718331EC07551004FB3C0 /* Frameworks */,
+				EAC959C1C383DD28F5DE86CA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,6 +180,10 @@
 		E62718331EC07551004FB3C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E66A5A571EC2FF2700017A34 /* Pods_FinalExam.framework */,
+				E66A5A511EC2FF0C00017A34 /* FacebookCore.framework */,
+				E66A5A521EC2FF0C00017A34 /* FacebookLogin.framework */,
+				E66A5A531EC2FF0C00017A34 /* FacebookShare.framework */,
 				E68B44221EC162E00081E930 /* Alamofire.framework */,
 				E68B44231EC162E00081E930 /* Realm.framework */,
 				E68B44241EC162E00081E930 /* RealmSwift.framework */,
@@ -185,6 +205,7 @@
 				E68B43FE1EC1610A0081E930 /* GoogleMapsBase.framework */,
 				E68B43FF1EC1610A0081E930 /* GoogleMapsCore.framework */,
 				E68B44001EC1610A0081E930 /* GoogleMaps.framework */,
+				79BCE849E4D515D7AA4BA010 /* Pods_FinalExam.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -210,6 +231,15 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		EAC959C1C383DD28F5DE86CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F77CBECE3A773EF8D232DCA /* Pods-FinalExam.debug.xcconfig */,
+				F6D26EBDF9538B68D675964A /* Pods-FinalExam.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -217,10 +247,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E62718231EC06CF4004FB3C0 /* Build configuration list for PBXNativeTarget "FinalExam" */;
 			buildPhases = (
+				10FDFDC204C4A74D3A8E5F1C /* [CP] Check Pods Manifest.lock */,
 				E627180D1EC06CF4004FB3C0 /* Sources */,
 				E627180E1EC06CF4004FB3C0 /* Frameworks */,
 				E627180F1EC06CF4004FB3C0 /* Resources */,
 				E62718321EC0751D004FB3C0 /* Embed Frameworks */,
+				61C02A5D3D26E9C455AC0042 /* [CP] Embed Pods Frameworks */,
+				F9B87312F1CA6C54712EE5DF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -278,6 +311,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10FDFDC204C4A74D3A8E5F1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		61C02A5D3D26E9C455AC0042 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FinalExam/Pods-FinalExam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9B87312F1CA6C54712EE5DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FinalExam/Pods-FinalExam-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E627180D1EC06CF4004FB3C0 /* Sources */ = {
@@ -412,12 +493,17 @@
 		};
 		E62718241EC06CF4004FB3C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F77CBECE3A773EF8D232DCA /* Pods-FinalExam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FacebookCore",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FacebookLogin",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FacebookShare",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = FinalExam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -430,12 +516,17 @@
 		};
 		E62718251EC06CF4004FB3C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6D26EBDF9538B68D675964A /* Pods-FinalExam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FacebookCore",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FacebookLogin",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FacebookShare",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = FinalExam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
